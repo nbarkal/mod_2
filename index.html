@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Georgian&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./responsive.sass">
+    <script src="https://kit.fontawesome.com/6c1be9418b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p id="p"></p>
+    <div class="nth-child-1-body">
+        <div class="section">
+            <h1>რედინესის მოდული</h1>
+            <div class="btn_section">
+                <button>
+                    <h>პერსონალი</h>
+                </button>
+                <button>
+                    <h>ლოჯისტიკა</h>
+                </button>
+                <button>
+                    <h>საერთო</h>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="nth-child-2-body">
+        <header>
+            <h1>ლოჯისტიკის მოდული</h1>
+            <div>
+                <button>S დონე</button>
+                <button>R დონე</button>
+            </div>
+        </header>
+        <div class="nth-child-2-b_div">
+            <div class="container">
+                <div class="first-child_container">
+                    <div class="S_section">
+                        <div class="S-section-1">
+                            <h>100%-90%</h>
+                            <h>89%-70%</h>
+                            <h>69%-60%</h>
+                            <h>59%-0%</h>
+                        </div>
+                        <div>
+                            <h1>S1</h1>
+                            <h1>S2</h1>
+                            <h1>S3</h1>
+                            <h1>S4</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-child_container">
+                    <div class="second-child_container_1d">
+                        <i class="fas fa-filter"></i>
+                        <h>ფილტრი</h>
+                    </div>
+                    <div class="second-child_container_2d">
+                        <div class="second-child_container_2d_1">
+                            <div>
+                                <h1>ძალები</h1>
+                            </div>
+                            <div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="second-child_container_2d_1">
+                            <div>
+                                <h1>ბრიგადა</h1>
+                            </div>
+                            <div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="second-child_container_2d_1">
+                            <div>
+                                <h1>ბატალიონი</h1>
+                            </div>
+                            <div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="second-child_container_2d_1_btn">
+                            <div>
+                                <h1>ძალები</h1>
+                            </div>
+                            <div>
+                                <button id="Hide">გაფილტვრა</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="data">
+                    <section id="S">
+                        <h1>მიმდინარე რეესტრი</h1>
+                        <article>საბრძოლო მზადყოფნის S დაკომპლექტების დონის მოდული A კატეგორიისთვის
+                        </article>
+                    </section>
+                    <table id="T">
+                        <thead>
+                            <tr>
+                                <th>კატეგორია</th>
+                                <th>დასახელება</th>
+                                <th>ტაბელით</th>
+                                <th>არსებული</th>
+                                <th>%</th>
+                                <th>დონე</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ტყვიამფრქვევი</h1>
+                                </td>
+                                <td>
+                                    <h1>18</h1>
+                                </td>
+                                <td>
+                                    <h1>18</h1>
+                                </td>
+                                <td>
+                                    <h1>100%</h1>
+                                </td>
+                                <td>
+                                    <h1>S1</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ხელის ტყვიამფრქვევი</h1>
+                                </td>
+                                <td>
+                                    <h1>54</h1>
+                                </td>
+                                <td>
+                                    <h1>45</h1>
+                                </td>
+                                <td>
+                                    <h1>83%</h1>
+                                </td>
+                                <td>
+                                    <h1>S2</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ყუმბარმტყორცნი "რპგ-7"</h1>
+                                </td>
+                                <td>
+                                    <h1>18</h1>
+                                </td>
+                                <td>
+                                    <h1>10</h1>
+                                </td>
+                                <td>
+                                    <h1>56%</h1>
+                                </td>
+                                <td>
+                                    <h1>S3</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>60მმ-იანი ნაღმმტყორცნი</h1>
+                                </td>
+                                <td>
+                                    <h1>6</h1>
+                                </td>
+                                <td>
+                                    <h1>4</h1>
+                                </td>
+                                <td>
+                                    <h1>67%</h1>
+                                </td>
+                                <td>
+                                    <h1>S4</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ხელის ტყვიამფრქვევი</h1>
+                                </td>
+                                <td>
+                                    <h1>54</h1>
+                                </td>
+                                <td>
+                                    <h1>45</h1>
+                                </td>
+                                <td>
+                                    <h1>83%</h1>
+                                </td>
+                                <td>
+                                    <h1>S2</h1>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav id="N">
+                        <a href=""><i class="fas fa-angle-double-left"></i></a>
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href=""><i class="fas fa-angle-double-right"></i></a>
+                    </nav>
+                </div>
+                <div class="data">
+                    <section id="S1">
+                        <h1 class="font_style">მიმდინარე რეესტრი</h1>
+                        <article class="font_style">საბრძოლო მზადყოფნის S დაკომპლექტების დონის მოდული A კატეგორიისთვის
+                        </article>
+                    </section>
+                    <table class="font_style" id="T1">
+                        <thead>
+                            <tr>
+                                <th>კატეგორია</th>
+                                <th>დასახელება</th>
+                                <th>ტაბელით</th>
+                                <th>არსებული</th>
+                                <th>%</th>
+                                <th>დონე</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ტყვიამფრქვევი</h1>
+                                </td>
+                                <td>
+                                    <h1>18</h1>
+                                </td>
+                                <td>
+                                    <h1>18</h1>
+                                </td>
+                                <td>
+                                    <h1>100%</h1>
+                                </td>
+                                <td>
+                                    <h1>S1</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ხელის ტყვიამფრქვევი</h1>
+                                </td>
+                                <td>
+                                    <h1>54</h1>
+                                </td>
+                                <td>
+                                    <h1>45</h1>
+                                </td>
+                                <td>
+                                    <h1>83%</h1>
+                                </td>
+                                <td>
+                                    <h1>S2</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ყუმბარმტყორცნი "რპგ-7"</h1>
+                                </td>
+                                <td>
+                                    <h1>18</h1>
+                                </td>
+                                <td>
+                                    <h1>10</h1>
+                                </td>
+                                <td>
+                                    <h1>56%</h1>
+                                </td>
+                                <td>
+                                    <h1>S3</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>60მმ-იანი ნაღმმტყორცნი</h1>
+                                </td>
+                                <td>
+                                    <h1>6</h1>
+                                </td>
+                                <td>
+                                    <h1>4</h1>
+                                </td>
+                                <td>
+                                    <h1>67%</h1>
+                                </td>
+                                <td>
+                                    <h1>S4</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1>A</h1>
+                                </td>
+                                <td>
+                                    <h1>ხელის ტყვიამფრქვევი</h1>
+                                </td>
+                                <td>
+                                    <h1>54</h1>
+                                </td>
+                                <td>
+                                    <h1>45</h1>
+                                </td>
+                                <td>
+                                    <h1>83%</h1>
+                                </td>
+                                <td>
+                                    <h1>S2</h1>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav class="font_style" id="N1">
+                        <a href=""><i class="fas fa-angle-double-left"></i></a>
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href=""><i class="fas fa-angle-double-right"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js.files/jquery.js" type="text/javascript"></script>
+</body>
+
+</html>

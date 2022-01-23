@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "colors";
+
+@mixin flex_c {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin btn {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: none;
+    border: inherit;
+}
+@mixin font {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans Georgian', sans-serif; 
+}
+
+html{
+    body{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.nth-child-1-body{
+    background: $darkblue;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .section{
+        @include flex_c();
+        justify-content: space-around;
+        margin-top: 4%;
+        width: 85%;
+        height: 30%;
+        h1{
+            @media screen and (max-width: 900px){
+            font-size: .6em;
+        }
+            font-size: 0.9em;
+            color: $grey;
+        }
+        .btn_section{
+            @include flex_c();
+            @include flex();
+            align-items: flex-end;
+            width: 100%;
+            height: 60%;
+        }
+        button{
+            @include btn();
+            h{
+                @media screen and (max-width: 900px){
+                    font-size: .5em;
+                }
+                font-size: .7em;
+                @include font();
+                margin-left: 5%;
+            }
+            text-align: start;
+            width: 90%;
+            height: 30%;
+            @include font();
+            background: $darkblue;
+            color: $grey;
+            &:hover{
+                color: $lightgrey;
+                background: $darkblue_1;
+            }
+        }
+        
+    }
+}
+
+.nth-child-2-body{
+    background: $white;
+    @include flex_c();
+    align-items: center;
+    width: 85%;
+    height: 100%;
+}
+body{
+    div{
+        header{
+            background: #ffff;
+            @include flex;
+            align-items: center;
+            width: 100%;
+            height: 7.5%;
+            h1{
+                margin-left: 2.5%;
+                @include font();
+                font-size: 1em;
+            }
+            div{
+                @include flex();
+                margin-right: 2.5%;
+            }
+            button{
+                font-size: 0.7em;
+                @include btn();
+                @include font();
+                margin: 0.5em;
+                width: 5em;
+                height: 2.5em;
+                background: #ffff;
+                &:hover{
+                    background: $lightgrey;
+                    color: $lightblue;
+                }
+            }
+        }
+    }
+}
+.nth-child-2-b_div{
+    @include flex_c();
+    @include flex();
+    margin-top: 2.5%;
+    width: 94%;
+    height: 85%;
+}
+.container{
+    width: 100%;
+    height: 28%;
+}
+.container1{
+    @include flex();
+    width: 100%;
+    height: 68%;
+    @media only screen and (max-width: 900px){
+        flex-direction: column;
+        .data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 49%;
+            font-size: .6em;
+        }
+    }
+}
+.data{
+    background: #ffff;
+    border-radius: 5px;
+    @include flex_c();
+    width: 49%;
+    height: 100%;
+    section{
+        margin-left: 5%;
+        @include flex_c();
+        justify-content: center;
+        width: 90%;
+        height: 15%;
+
+        h1{
+            font-size: .9em;
+            @include font();
+        }
+        article{
+            color: $grey;
+            margin-top: .5%;
+            font-size: .7em;
+            @include font();
+        }
+    }
+    table{
+        th{
+            text-align: center;
+            font-size: .7em;
+            color: $grey;
+            @include font();
+        }
+        th,td{
+            border-bottom: .1em dotted $lightgrey;
+        }
+        h1{
+            font-size: .7em;
+            @include font();
+        }
+        align-self: center;
+        width: 90%;
+        height: 70%;
+
+        td{
+            text-align: center;
+        }
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 5%;
+        width: 40%;
+        height: 15%;
+
+        a{
+            @include font();
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            text-decoration: none;
+            width: 13%;
+            height: 50%;  
+            background: $lightgrey;
+            text-align: center;
+            font-size: .8em;
+            color: black;
+            &:hover{
+                background: $lightblue;
+                color: $white;
+            }
+        }
+        i{
+            font-size: .5em;
+        }
+    }
+}
+.container{
+    @include flex();
+    .first-child_container{
+        background: #ffff;
+        border-radius: 5px;
+        width: 25%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+    .second-child_container{
+        background: #ffff;
+        border-radius: 5px;
+        width: 73%;
+        height: 100%;
+   
+        @include flex_c();
+        justify-content: start;
+        align-items: center;
+        .second-child_container_1d{
+            color: $grey;
+            width: 96%;
+            height: 33.33%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            i{
+                font-size: 1em;
+            }
+            h{
+                @include font();
+                font-size: .8em;
+            }
+        }
+        .second-child_container_2d{
+            @include flex();
+            width: 96%;
+            height: 33.33%;
+        }
+        .second-child_container_2d_1_btn{
+            width: 9%;
+            height: 100%;
+            @include flex_c();
+            @include flex();
+            h1{
+                font-size: .7em;
+                @include font();
+                visibility: hidden;
+            }
+            button{
+                @include btn();
+                font-size: .5em;
+                @include font();
+                color: $lightblue;
+                @media only screen and (max-width: 1000px){
+                    font-size: .4em
+                }
+                @media only screen and (max-width: 800px){
+                    font-size: .3em
+                }
+            }
+            :first-child{
+                width: 100%;
+                height: 30%;
+            }
+            :nth-child(2){
+                width: 100%;
+                height: 60%;
+                button{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .second-child_container_2d_1{
+            width: 29%;
+            height: 100%;
+            @include flex_c();
+            @include flex();
+            h1{
+                font-size: .7em;
+                @include font();
+            }
+            button{
+                font-size: .4em;
+                @include font();
+                background: $white;
+                @include btn();
+            }
+            :first-child{
+                width: 100%;
+                height: 30%;
+            }
+            :nth-child(2){
+                width: 100%;
+                height: 60%;
+                input{
+                    background: $white;
+                    border:none;
+                    outline: none;
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        .S_section{
+            border-radius: 5px;
+            display: flex;
+            margin-left: 5%;
+            width: 80%;
+            height: 80%;
+            h{
+                border: none;
+                @include font();
+                font-size: .8em;
+            }
+            h1{
+                border: none;
+                @include font();
+                font-size: .8em;
+            }
+            div{
+                @include flex_c();
+                @include flex();
+                width: 50%;
+                height: 100%;
+                @include font();
+                @media only screen and (max-width: 900px){
+                    font-size: .7em;
+                }
+            }
+            .S-section-1{
+                color: $grey;
+            }
+            :nth-child(2){
+                align-items: center;
+            }
+        }
+    }
+}   
+
+
